@@ -32,7 +32,7 @@ Welcome to my GitHub profile! I’m a Data Analyst passionate about transforming
 ## 🌟 Featured Projects
 - [Excel Project](https://github.com/Kanasia-Moore/Excel-Project-Coming-Soon-.git) 
 - [Capstone Project](https://github.com/Kanasia-Moore/Capstone-Project-Coming-Soon-.git)
-- [SQL Project](https://github.com/Kanasia-Moore/SQL-Project-.git) 
+- [SQL Project](https://github.com/Kanasia-Moore/SQL-Project) 
 
 ---
 
