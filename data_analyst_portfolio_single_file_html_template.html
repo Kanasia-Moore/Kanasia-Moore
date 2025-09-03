@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Analyst Portfolio – Kanasia Moore</title>
+  <meta name="description" content="Portfolio of a data analyst specializing in SQL, Excel, Tableau/Power BI, and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0e14;        /* background */
+      --card: #121723;      /* card background */
+      --soft: #1b2233;      /* softer card */
+      --text: #e6e9ef;      /* primary text */
+      --muted: #aab2c0;     /* secondary text */
+      --brand: #6ee7ff;     /* accent */
+      --brand-2: #9b8cff;   /* accent 2 */
+      --ok: #4ade80;        /* success */
+      --warn: #fbbf24;      /* warning */
+      --danger: #f87171;    /* error */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 100% -10%, rgba(110,231,255,.08), transparent),
+                  radial-gradient(900px 500px at -10% -20%, rgba(155,140,255,.12), transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      letter-spacing: .2px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    .pill { display: inline-flex; gap: .5rem; align-items: center; border: 1px solid rgba(255,255,255,.12); padding: .4rem .75rem; border-radius: 999px; background: rgba(255,255,255,.04); color: var(--muted); font-size: .9rem; }
+    .pill .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--ok); box-shadow: 0 0 0 3px rgba(74,222,128,.12); }
+    header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px); background: linear-gradient(to bottom, rgba(11,14,20,.85), rgba(11,14,20,.55)); border-bottom: 1px solid rgba(255,255,255,.08); }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: .8rem 0; }
+    .logo { display: flex; gap: .6rem; align-items: center; font-weight: 800; letter-spacing: .3px; }
+    .logo .mark { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: var(--shadow); }
+    .navlinks { display: flex; gap: 1rem; align-items: center; }
+    .btn { display: inline-flex; align-items: center; gap: .6rem; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #0b0e14; padding: .7rem 1rem; border-radius: 999px; font-weight: 700; border: none; cursor: pointer; box-shadow: var(--shadow); }
+    .btn.ghost { background: rgba(255,255,255,.04); color: var(--text); border: 1px solid rgba(255,255,255,.12); box-shadow: none; }
+    .btn.small { padding: .5rem .8rem; font-weight: 600; }
+
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.4fr .9fr; gap: 2rem; padding: 3.5rem 0 2rem; align-items: center; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.15; margin: .6rem 0 1rem; }
+    .hero p { color: var(--muted); font-size: 1.05rem; }
+    .hero-card { background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.1); padding: 1rem; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+    .stat { background: var(--card); border: 1px solid rgba(255,255,255,.08); padding: 1rem; border-radius: 12px; text-align: center; }
+    .stat h3 { margin: 0; font-size: 1.3rem; }
+    .stat p { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
+
+    /* Sections */
+    section { padding: 2.5rem 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; margin-bottom: 1.2rem; }
+    .section-head h2 { margin: 0; font-size: 1.6rem; letter-spacing: .2px; }
+    .section-head p { margin: 0; color: var(--muted); }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(6, 1fr); gap: .8rem; }
+    .chip { background: var(--soft); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: .7rem .8rem; text-align: center; font-weight: 600; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+    .thumb { aspect-ratio: 16/9; background: linear-gradient(135deg, rgba(110,231,255,.18), rgba(155,140,255,.18)); display: grid; place-items: center; font-weight: 700; letter-spacing: .5px; color: #0b0e14; }
+    .card-body { padding: 1rem; display: grid; gap: .6rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .tag { font-size: .8rem; padding: .25rem .5rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.12); color: var(--muted); }
+    .card-footer { margin-top: auto; display: flex; justify-content: space-between; padding: .8rem 1rem 1rem; }
+    .filterbar { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+
+    /* Case Studies */
+    .case { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); padding: 1rem; border-radius: 16px; }
+    .case ul { margin: .3rem 0 .6rem 1.2rem; }
+
+    footer { color: var(--muted); padding: 2rem 0; }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+      .projects { grid-template-columns: repeat(2, 1fr); }
+      .skills { grid-template-columns: repeat(3, 1fr); }
+      .case { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .stats { grid-template-columns: 1fr 1fr; }
+      .projects { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+  <script>
+    // Simple client-side project filtering
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('[data-filter]');
+      const cards = document.querySelectorAll('[data-tags]');
+      buttons.forEach(btn => btn.addEventListener('click', () => {
+        const f = btn.getAttribute('data-filter');
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        cards.forEach(c => {
+          const tags = c.getAttribute('data-tags');
+          c.style.display = (f === 'all' || tags.includes(f)) ? 'flex' : 'none';
+        });
+      }));
+    });
+  </script>
+  <style>
+    /* tiny style helper for active filter */
+    .filterbar .active { outline: 2px solid rgba(110,231,255,.65); background: rgba(110,231,255,.12); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kanasia Moore",
+    "jobTitle": "Data Analyst",
+    "url": "https://your-domain.com",
+    "sameAs": ["https://www.linkedin.com/in/kanasia-moore"],
+    "skills": "SQL, Excel, Tableau, Python, Data Visualization, Statistics"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#top" aria-label="Go to top">
+          <span class="mark" aria-hidden="true"></span>
+          <span>KANASIA MOORE</span>
+        </a>
+        <div class="navlinks">
+          <a href="#projects" class="pill">Projects</a>
+          <a href="#skills" class="pill">Skills</a>
+          <a href="#case-studies" class="pill">Case Studies</a>
+          <a href="#about-me" class="btn small">About Me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div>
+        <span class="pill"><span class="dot"></span> Open to analytics roles</span>
+        <h1>Data Analyst blending <span style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent;">SQL, Excel, and Tableau</span> to turn questions into crisp decisions.</h1>
+        <p>Committed to using data-driven insights to advance equal access in education and job opportunities, bridging the gap between numbers and meaningful social impact.</p>
+        <div style="display:flex; gap:.6rem; margin-top:1rem; flex-wrap: wrap;">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#resume" class="btn ghost">Download Résumé</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><h3>3</h3><p>Portfolio Projects</p></div>
+          <div class="stat"><h3>2</h3><p>Case Studies</p></div>
+          <div class="stat"><h3>100% </h3><p>Reproducible Work</p></div>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Quick profile">
+        <div style="background:var(--card); border-radius:12px; padding:1rem; border:1px solid rgba(255,255,255,.08);">
+          <h3 style="margin-top:0">Core Snapshot</h3>
+          <ul style="margin: .3rem 0 .6rem 1.2rem; color: var(--muted);">
+            <li>Strong SQL for joins, windows, CTEs; tidy Excel models.</li>
+            <li>Tableau dashboards with parameter controls & actions.</li>
+            <li>Python for EDA: pandas, matplotlib, scikit-learn basics.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">RStudio</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills & Tools">
+      <div class="section-head">
+        <h2>Skills & Tools</h2>
+        <p>What I use to deliver clean, decision-ready work.</p>
+      </div>
+      <div class="skills">
+        <div class="chip" title="SQL">SQL</div>
+        <div class="chip" title="Excel / Google Sheets">Excel / Sheets</div>
+        <div class="chip" title="Tableau">Tableau</div>
+        <div class="chip" title="RStudio">RStudio</div>
+        <div class="chip" title="Python (pandas, matplotlib)">Python</div>
+        <div class="chip" title="Statistics">Statistics</div>
+        <div class="chip" title="Data Cleaning">Data Cleaning</div>
+        <div class="chip" title="EDA">EDA</div>
+        <div class="chip" title="Dashboards">Dashboards</div>
+        <div class="chip" title="A/B Testing">A/B Testing</div>
+        <div class="chip" title="Communication">Communication</div>
+        <div class="chip" title="Stakeholder mgmt">Stakeholder Mgmt</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Selected Projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Filter by tool to jump to what you care about.</p>
+      </div>
+      <div class="filterbar">
+        <button class="btn ghost small active" data-filter="all">All</button>
+        <button class="btn ghost small" data-filter="SQL">SQL</button>
+        <button class="btn ghost small" data-filter="Tableau">Tableau</button>
+        <button class="btn ghost small" data-filter="Python">Python</button>
+        <button class="btn ghost small" data-filter="Excel">Excel</button>
+        <button class="btn ghost small" data-filter="Power BI">Power BI</button>
+      </div>
+      <div class="projects">
+        <!-- Project Card Template -->
+        <article class="card" data-tags="SQL,Tableau">
+          <div class="thumb">School Funding Insights</div>
+          <div class="card-body">
+            <h3>K–12 Funding vs. Outcomes</h3>
+            <p class="muted">Explored how underfunded districts correlate with lower post-secondary attainment using NCES & ACS data. Built SQL models and a Tableau dashboard highlighting gaps.</p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">NCES</span>
+              <span class="tag">ACS</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#case-studies" class="pill">Read Case Study</a>
+            <a href="https://public.tableau.com/" target="_blank" class="pill">View Dashboard</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="Excel,Power BI">
+          <div class="thumb">Ops KPI Board</div>
+          <div class="card-body">
+            <h3>Airport Ops KPI Tracker</h3>
+            <p class="muted">Built an Excel → Power BI pipeline tracking wait times, staffing, and throughput; reduced weekly reporting time by 60% with repeatable measures.</p>
+            <div class="tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#case-studies" class="pill">Read Case Study</a>
+            <a href="https://github.com/Kanasia-Moore" class="pill">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="Python,SQL">
+          <div class="thumb">Churn Model</div>
+          <div class="card-body">
+            <h3>Customer Churn EDA & Model</h3>
+            <p class="muted">Cleaned a telco dataset, engineered features with SQL, and ran a baseline logistic regression in Python to identify risk drivers and retention levers.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">EDA</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="pill">Notebook</a>
+            <a href="#" class="pill">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies" aria-label="Case Studies">
+      <div class="section-head">
+        <h2>Case Studies</h2>
+        <p>Deep dives showing problem → process → impact.</p>
+      </div>
+
+      <article class="case">
+        <div>
+          <h3>How Funding Shapes Outcomes</h3>
+          <p class="muted">Education equity analysis using NCES finance + ACS outcomes data across states.</p>
+          <ul>
+            <li><strong>Question:</strong> Do lower per-pupil dollars predict lower degree attainment (18–30)?</li>
+            <li><strong>Data:</strong> NCES Finance, IPEDS, ACS 5-year estimates.</li>
+            <li><strong>Method:</strong> SQL transforms → Python EDA → Tableau storytelling dashboard.</li>
+            <li><strong>Impact:</strong> Identified 3 high-need states and prioritized 5 interventions.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Highlights</h4>
+          <ul>
+            <li>Built reproducible SQL models (CTEs, window functions).</li>
+            <li>Created cohort-trace visuals with parameter controls in Tableau.</li>
+            <li>Wrote a 2-page brief tailored to non-technical stakeholders.</li>
+          </ul>
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+            <a href="#" class="btn small">Open SQL</a>
+            <a href="#" class="btn ghost small">Open Dashboard</a>
+            <a href="#" class="btn ghost small">Read Brief (PDF)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case" style="margin-top:1rem;">
+        <div>
+          <h3>Airport Throughput KPIs</h3>
+          <p class="muted">From manual spreadsheets to a live KPI board with alerts.</p>
+          <ul>
+            <li><strong>Question:</strong> How to staff for peak hours while minimizing overtime?</li>
+            <li><strong>Data:</strong> Historical throughput, staffing logs, weather overlays.</li>
+            <li><strong>Method:</strong> Excel model → Power BI measures & visuals.</li>
+            <li><strong>Impact:</strong> 60% reporting time reduction; clearer SLA visibility.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Highlights</h4>
+          <ul>
+            <li>Reusable Excel templates with data validation.</li>
+            <li>Power BI measures for OT, SLA breaches, and forecast deltas.</li>
+            <li>Documented playbook so teammates can self-serve.</li>
+          </ul>
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+            <a href="#" class="btn small">Open Excel</a>
+            <a href="#" class="btn ghost small">Power BI PBIX</a>
+            <a href="#" class="btn ghost small">Process Doc</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- RESUME / DOWNLOADS -->
+    <section id="resume" aria-label="Résumé & Downloads">
+      <div class="section-head">
+        <h2>Résumé & Links</h2>
+        <p>One-page PDF + socials.</p>
+      </div>
+      <div class="card" style="padding:1rem;">
+        <div class="card-body">
+          <p>Grab the latest resume or browse code and dashboards.</p>
+          <div class="tags">
+            <a class="btn small" href="./Your_Name_Resume.pdf" download>Download PDF</a>
+            <a class="btn ghost small" href="https://github.com/Kanasia-Moore" target="_blank">GitHub</a>
+            <a class="btn ghost small" href="https://public.tableau.com/app/profile/kanasia.moore" target="_blank">Tableau Public</a>
+            <a class="btn ghost small" href="https://www.linkedin.com/in/kanasia-moore" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <p>© <span id="year"></span> Your Name — Data Analyst</p>
+        <p>Built with accessible, semantic HTML. No frameworks, no tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
