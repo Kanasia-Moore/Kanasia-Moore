@@ -1,6 +1,6 @@
 # 👋 Hello, I'm Kanasia Moore!
 
-Welcome to my GitHub profile! I’m a Data Analyst passionate about transforming data into actionable insights and making a positive impact through analytics. Explore my repositories, discover my projects, and connect with me!
+Welcome to my GitHub profile! A data analyst who believes data should not only inform but empower. With expertise in analysis and visualization, I translate insights into actionable strategies that support equal opportunity while meeting business goals, helping organizations serve both people and performance.
 
 ---
 
