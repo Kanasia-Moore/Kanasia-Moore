@@ -33,11 +33,11 @@ That curiosity grew into a drive to **turn data into decisions** — the kind th
 I use **data visualization, storytelling, and analytical strategy** to reveal the *why* behind metrics. My work often lives at the intersection of **marketing performance**, **consumer behavior**, and **education equity** — because numbers only matter when they help us improve lives or drive results.
 
 **Core Strengths:**
-- 📊 Marketing analytics & audience insights  
-- 💬 Data storytelling for executive & public audiences  
+- 📊 Marketing analytics  
+- 💬 Data storytelling  
 - 💡 Sales performance tracking and KPI development  
 - 🧩 Education and social impact analytics  
-- 🕵🏽‍♀️ Root-cause problem solving using SQL, Python/R, and Tableau  
+- 🕵🏽‍♀️ Problem solving using SQL, Python/R, and Tableau  
 
 ---
 
@@ -60,7 +60,7 @@ I use **data visualization, storytelling, and analytical strategy** to reveal th
 | 🌟 Project | 📘 Description | 🧰 Tools |
 |-------------|----------------|-----------|
 | 🎓 **K–12 Funding vs Adult Outcomes** | Explores how education funding influences adult education attainment and workforce opportunities. | Python, Tableau |
-| 📺 **Netflix Case Study** | Data-driven storytelling that identifies engagement patterns and marketing insights behind viewer trends. | SQL, Tableau |
+| 📺 **Netflix Case Study** | Data-driven storytelling that identifies engagement patterns and marketing insights behind viewer trends. | Excel, Tableau |
 | 📈 **Sales & KPI Performance Project** | A hands-on analytics exercise analyzing business KPIs to enhance decision-making efficiency and storytelling dashboards. | SQL, Python, Tableau |
 
 > Every project blends **data and narrative** — showing *what’s happening*, *why it matters*, and *how to take action*.
