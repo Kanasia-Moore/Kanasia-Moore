@@ -48,7 +48,7 @@ I use **data visualization, storytelling, and analytical strategy** to reveal th
 | Languages | Visualization | Analysis | Collaboration |
 |------------|----------------|-----------|----------------|
 | 🐍 Python | 📈 Tableau | 🧩 Excel | 💻 GitHub |
-| 🧮 R | 🎨 Power BI | 🧠 Pandas | 🗂️ Notion |
+| 🧮 R | 🎨 GGplot | 🧠 Pandas | 🗂️ Microsoft Office |
 | 🗃️ SQL | 📊 Datawrapper | 📚 NumPy | ☁️ Google Workspace |
 
 </div>
