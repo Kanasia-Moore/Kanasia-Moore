@@ -80,7 +80,7 @@ Whether I’m optimizing marketing campaigns, analyzing sales funnels, or uncove
 
 ### 🤝 Let’s Connect  
 
-💌 **[Email Me](mailto:moorek526@gmail.com)** &nbsp;|&nbsp; 💼 **[LinkedIn](www.linkedin.com/in/kanasia-moore)** &nbsp;|&nbsp; 🌐 **[Portfolio](#)**  
+💌 **[Email Me](mailto:moorek526@gmail.com)** &nbsp;|&nbsp; 💼 **[LinkedIn](https:www.linkedin.com/in/kanasia-moore)** &nbsp;|&nbsp; 🌐 **[Portfolio](#)**  
 
 ---
 
