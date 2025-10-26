@@ -8,7 +8,7 @@
 
 ---
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/kanasia-moore)
 [![Portfolio Badge](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](#)
 [![Email Badge](https://img.shields.io/badge/Email-8B0000?style=for-the-badge&logo=gmail&logoColor=white)](#)
 
@@ -80,7 +80,7 @@ Whether I’m optimizing marketing campaigns, analyzing sales funnels, or uncove
 
 ### 🤝 Let’s Connect  
 
-💌 **[Email Me](#)** &nbsp;|&nbsp; 💼 **[LinkedIn](#)** &nbsp;|&nbsp; 🌐 **[Portfolio](#)**  
+💌 **[Email Me](moorek526@gmail.com)** &nbsp;|&nbsp; 💼 **[LinkedIn](www.linkedin.com/in/kanasia-moore)** &nbsp;|&nbsp; 🌐 **[Portfolio](#)**  
 
 ---
 
