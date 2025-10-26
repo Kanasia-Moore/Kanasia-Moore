@@ -4,7 +4,7 @@
 <div align="center">
 
 # 👋🏽 Hi, I’m **Kanasia Moore**  
-🎯 *Data Analyst • Storyteller • Marketing Strategist • Visualizer • Advocate for Education & Opportunity*
+🎯 *Data Analyst • Storyteller • Marketing Strategist • Visualizer • Advocate for Equal Education & Opportunity*
 
 ---
 
