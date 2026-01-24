@@ -10,7 +10,7 @@
 
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kanasia-moore-a77063197)
 [![Portfolio Badge](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](#)
-[![Tableau](https://img.shields.io/badge/Tableau-EB5202?style=for-the-badge&logo=tableau&logoColor=white)](#)
+[![Tableau](https://img.shields.io/badge/Tableau-EB5202?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/kanasia.moore/vizzes)
 
 ---
 
