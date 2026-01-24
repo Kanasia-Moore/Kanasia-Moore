@@ -86,4 +86,54 @@ Whether I’m optimizing marketing campaigns, analyzing sales funnels, or uncove
 
 > *“Behind every number is a story. Behind every story, an opportunity to make things better — for business, for people, for progress.”*
 
+# Hi, I’m Kanasia 👋🏽
+
+I’m a **Data Analyst** who supports better decisions by combining strong analytical thinking with clear communication, training, and leadership.
+
+My work focuses on turning complex, messy information into insight that helps teams understand what’s happening, why it matters, and what to do next. I’m especially interested in analysis that sits at the intersection of **people, behavior, and outcomes**—across customer, product, marketing, and operations.
+
+I bring a people-centered mindset to analytics, along with strong problem-solving skills and experience guiding and supporting others in fast-paced, high-impact environments.
+
+---
+
+## 🔍 What I’m Focused On
+- Translating data into clear, meaningful insight  
+- Supporting thoughtful, data-informed decision-making  
+- Building projects that reflect real-world business and human needs  
+- Growing as an analyst while maintaining integrity and clarity in my work  
+
+---
+
+## 🧠 Skills & Tools
+
+| Category | Skills |
+|--------|--------|
+| **Languages & Tools** | SQL (BigQuery, MySQL), Python, R (RStudio), Excel, Google Sheets |
+| **Data & Analytics** | Data Cleaning, Exploratory Analysis, Segmentation, Data Validation, Visualization |
+| **Visualization** | Tableau |
+| **Analytical Focus** | Customer & Behavioral Analysis, Product & Operational Analysis, Decision Support |
+| **Leadership & Collaboration** | Training & Mentorship, Clear Communication, Cross-Functional Teamwork |
+| **Workflow & Platforms** | GitHub, Kaggle, Google Workspace, Microsoft 365, Slack |
+
+---
+
+## 📊 Projects
+My projects are designed to explore real-world questions and communicate insight clearly and responsibly.
+
+➡️ **Check out my pinned repositories** to see work related to:
+- CRM & customer behavior analysis  
+- Operational and performance insights  
+- Data storytelling through dashboards and summaries  
+
+---
+
+## 🌱 A Bit More About Me
+I value integrity, clarity, and impact in my work. I’m most fulfilled in environments that encourage curiosity, collaboration, and the responsible use of data to improve outcomes for people and organizations.
+
+📫 **Let’s connect:**  
+- LinkedIn: *(add link)*  
+- Portfolio: *(add link)*
+
+Thanks for stopping by!
+
 </div>
