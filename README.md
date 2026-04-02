@@ -4,7 +4,7 @@
 <div align="center">
 
 # 👋🏾 Hi, I’m **Kanasia Moore**  
-🎯 *Data Analyst • Insight & Decision Support • Training & Leadership • People-Centered Analytics*
+🎯 *Operations & Workforce Data Analyst • Insight & Decision Support • Training & Leadership*
 
 ---
 
@@ -18,20 +18,22 @@
 
 ## 🌱 About Me  
 
-I’m a **data analyst who supports better decisions** by combining strong analytical thinking with clear communication, training, and leadership.
+I’m a **data analyst** with a focus on operations and workforce strategy, driven by a curiosity for how systems impact people. 
 
-I’m naturally drawn to understanding *why* things happen — how people behave, where processes break down, and how data can bring clarity to complex situations. Across my work, I focus on translating information into insight that’s not only accurate, but useful and responsible.
+My experience across structured environments and fast-paced teams have shaped how I approach data—not just as numbers, but as signals of where processes succeed or break down.
 
-I’m especially interested in analytics that sit at the intersection of **people, systems, and outcomes** — whether that’s customer behavior, product performance, operational efficiency, or social impact. I value context as much as numbers, and I believe good analysis should reduce confusion, build trust, and help teams move forward with confidence.
+**Why I do this:**
+
+I care deeply about building healthier, more effective work environments. I believe strong operations and thoughtful systems don’t just improve performance—they directly shape morale, retention, and long-term success.
 
 ---
 
 
 ## 💪🏾 Core Strengths  
 
-- 📊 Customer, product, marketing, and operational analysis  
-- 🧠 Strong analytical thinking and problem-solving  
-- 💬 Translating complex information into clear, actionable insight  
+- 📊 Communicating findings in a way that supports understanding and action  
+- 🧠 Identifying where workflows and processes create friction or inefficiency  
+- 💬 Breaking down complex operational data into clear, structured insights  
 - 🤝 Training, mentoring, and supporting others  
 - 🧩 Ethical, context-aware data use and interpretation  
 
@@ -61,7 +63,7 @@ Outside of analytics, I’m naturally curious and enjoy learning new skills in m
 
 <div align="center">
 
-I love turning curiosity into insight — and my projects are where that shows up.   
+I love turning my curiosity into insight — and my projects are where that shows up.   
 Feel free to browse my project repositories below!
 
 </div>
