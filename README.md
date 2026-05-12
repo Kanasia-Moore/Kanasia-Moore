@@ -4,7 +4,7 @@
 <div align="center">
 
 # 👋🏾 Hi, I’m **Kanasia Moore**  
-🎯 *Operations & Workforce Data Analyst • Insight & Decision Support • Training & Leadership*
+🎯 *Operations & Workforce Data Analyst • Insight & Decision Support*
 
 ---
 
